@@ -36,10 +36,10 @@ const Home = () => {
 
       <div className='absolute flex justify-center  items-center top-[7rem] md:top-[10.4rem] lg:top-[7.3rem]  w-[100vw] h-screen'>
         <div data-aos="fade-up" className='text-center flex-col items-center justify-center '>
-          <h2 className='font-[Imperial]  md:text-7xl  text-6xl '>Discover Nova Scotia’s Seaside Magic</h2>
-          <p className='px-64 text-center'>Explore the beauty, history, and heart of Nova Scotia with Safi Seaside Tours — your trusted local guide for private and small-group adventures from Halifax. Whether you’re visiting Peggy’s Cove, strolling through Lunenburg, or crafting your own custom route, every journey is designed with care and authentic local hospitality.</p>
+          <h2 className='font-[Imperial]  md:text-4xl text-3xl  lg:text-6xl '>Discover Nova Scotia’s Seaside Magic</h2>
+          <p className='lg:px-64 md:px-20 px-5 text-sm text-center'>Explore the beauty, history, and heart of Nova Scotia with Safi Seaside Tours — your trusted local guide for private and small-group adventures from Halifax. Whether you’re visiting Peggy’s Cove, strolling through Lunenburg, or crafting your own custom route, every journey is designed with care and authentic local hospitality.</p>
           <div className='flex justify-center items-center py-6 gap-5'>
-            <Link to='/Booking'><div><button className=' border-black  bg-[#0680C5]  uppercase font-[Antonio] text-white hover:bg-[#E5B982] px-6 py-3 rounded-xl'>Book Your Tour Today</button></div></Link>
+            <Link to='/tour'><div><button className=' border-black  bg-[#0680C5]  uppercase font-[Antonio] text-white hover:bg-[#E5B982] px-6 py-3 rounded-xl'>Book Your Tour Today</button></div></Link>
 
           </div>
         </div>
@@ -68,7 +68,7 @@ Each trip is led by Asif Safi, a friendly, multilingual guide with more than 15 
    <h2  className='text-white text-2xl uppercase font-outfit font-bold'>Our Most Loved Tours</h2>
    <p className='text-gray-300 text-lg '>Experience Nova Scotia’s breathtaking coastlines through our most loved tours.</p>
    </div>
-<div className='flex gap-5 '>
+<div className='grid md:grid-cols-2 gap-6 lg:grid-cols-4'>
 <div className='flex flex-col bg-gradient-to-br from-[#0D3556] via-[#0680C5] to-[#F9D3A6]
 
 
@@ -107,7 +107,7 @@ Each trip is led by Asif Safi, a friendly, multilingual guide with more than 15 
 </div>
 </div>
 </div>
-<div className='py-6'><button className=' border-black  bg-[#0680C5]  uppercase font-bold text-white hover:bg-[#E5B982] px-8 py-4 rounded-xl'>Explore More</button></div>
+<Link  to='/tour'><div className='py-6'><button className=' border-black  bg-[#0680C5]  uppercase font-bold text-white hover:bg-[#E5B982] px-8 py-4 rounded-xl'>Explore More</button></div></Link>
       </div>
       {/* offer-SECTION */}
       <div className='bg-[#0D3556] py-9'>
@@ -140,7 +140,7 @@ Each trip is led by Asif Safi, a friendly, multilingual guide with more than 15 
   Founded by <span class="font-semibold text-[#0D3556]">Asif Safi</span>, we bring 15+ years of experience, local warmth, 
   and authentic seaside hospitality to every tour.
 </p>
-              <Link to="/Booking"> <div><button data-aos="zoom-out" className=' border-black border-2 text-xl uppercase hover:bg-black hover:text-[#FFFFF0] font-[Antonio] text-black px-3 py-2 rounded-xl'>discover more</button></div></Link>
+              <Link to="/about"> <div><button data-aos="zoom-out" className=' border-black border-2 text-xl uppercase hover:bg-black hover:text-[#FFFFF0] font-[Antonio] text-black px-3 py-2 rounded-xl'>discover more</button></div></Link>
             </div>
     
             <div className='flex justify-center items-center'> <img data-aos="fade-in" className='rounded-t-full w-[19rem]   outline-black outline-2 outline  outline-offset-8' src="https://i.pinimg.com/474x/b0/db/97/b0db97aa653821549856f7444b9d8c65.jpg" alt="" /></div>
